@@ -1,22 +1,30 @@
-package com.company;
-
 public class lgkrn {
-        public static void main(String[] args) {
-            Bulat keliling = new Bulat();
-            keliling.Hitung();
+    private double keliling;
+    private double phi = 3.14;
+    private int jari = 5;
 
-        }
-
-        class Bulat {
-            double phi = 3.14;
-            double r = 11;
-            double KelilingLingkaran;
-
-            void Hitung() {
-                KelilingLingkaran = 2 * phi * r;
-                System.out.println("Keliling Lingkaran Adalah = " + KelilingLingkaran);
-            }
-        }
+    public void keliling() {
+        this.keliling = 2 * phi * jari;
     }
 
+    public void setKeliling(double Keliling) {
+        this.keliling = keliling;
+    }
+
+    public double getKeliling() {
+        return keliling;
+    }
+
+    public double getPhi() {
+        return phi;
+    }
+
+    public void setJari(int jari) {
+        this.jari = jari;
+    }
+
+    public void setPhi(double phi) {
+        this.phi = phi;
+    }
+}
 

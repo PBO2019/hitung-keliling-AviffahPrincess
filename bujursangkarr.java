@@ -1,21 +1,27 @@
-package com.company;
 
 public class bujursangkarr {
-        public static void main(String[] args) {
-            Bujur keliling = new Bujur();
-            keliling.Hitung();
+    private int keliling;
+    private int sisi;
 
-        }
-
-        class Bujur{
-            public int sisi = 4;
-            public double KelilingBujurSangkar;
-
-            public void Hitung(){
-                KelilingBujurSangkar = 4*sisi;
-                System.out.println ("Keliling Bujur Sangkar Adalah = " + KelilingBujurSangkar);
-
-            }
-        }
+    public void Keliling() {
+        this.keliling = 4 * sisi;
     }
+
+    public void setkeliling (int keliling){
+        this.keliling =keliling;
+    }
+
+    public int getKeliling() {
+        return keliling;
+    }
+
+    public void setSisi(int sisi) {
+        this.sisi = sisi;
+    }
+
+    public int getSisi() {
+        return sisi;
+    }
+}
+
 
